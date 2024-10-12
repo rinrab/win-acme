@@ -11,8 +11,14 @@
     <ui:WixUI Id="WixUI_InstallDir"
               InstallDirectory="INSTALLFOLDER" />
 
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="INSTALLFOLDER" Name="!(bind.Property.Manufacturer) !(bind.Property.ProductName)" />
+    </StandardDirectory>
+
     <Feature Id="Main">
-      <ComponentGroupRef Id="ExampleComponents" />
+      <Component>
+        <File Source="Package.wxs" />
+      </Component>
     </Feature>
   </Package>
 </Wix>
