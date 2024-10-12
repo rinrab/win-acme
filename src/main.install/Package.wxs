@@ -16,8 +16,14 @@
     </StandardDirectory>
 
     <Feature Id="Main">
-      <Component>
-        <File Source="Package.wxs" />
+      <Component Id="wacs_exe">
+        <File Source="$(var.InstallerSource)/publish/wacs.exe" />
+      </Component>
+      <Component Id="settings_default_json">
+        <File Source="$(var.InstallerSource)/settings.json" Name="settings_default.json" />
+      </Component>
+      <Component Id="public_suffix_list_dat">
+        <File Source="$(var.InstallerSource)/public_suffix_list.dat" />
       </Component>
     </Feature>
   </Package>

@@ -5,4 +5,12 @@
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="dotnet publish $(ProjectDir)..\main\wacs.csproj -c $(ConfigurationName) --self-contained true -r win-$(PlatformName)" />
   </Target>
+  <PropertyGroup>
+    <InstallerSource>$(MSBuildProjectDirectory)\..\main\bin\$(Configuration)\net7.0\win-$(Platform)</InstallerSource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefineConstants>
+      InstallerSource=$(InstallerSource);
+    </DefineConstants>
+  </PropertyGroup>
 </Project>
