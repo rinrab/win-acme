@@ -2,4 +2,7 @@
   <ItemGroup>
     <PackageReference Include="WixToolset.UI.wixext" Version="5.0.2" />
   </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="dotnet publish $(ProjectDir)..\main\wacs.csproj -c $(ConfigurationName) --self-contained true -r win-$(PlatformName)" />
+  </Target>
 </Project>
