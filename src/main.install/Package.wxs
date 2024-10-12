@@ -1,5 +1,8 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-  <Package Name="wacm.install" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="7847b566-01e3-4473-90e4-8fa6d040b7b7">
+  <Package Name="win-acme"
+           Manufacturer="win-acme"
+           Version="1.0.0.0"
+           UpgradeCode="7847b566-01e3-4473-90e4-8fa6d040b7b7">
     <MediaTemplate EmbedCab="yes" />
 
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
