@@ -86,6 +86,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wacs.validation.http.webdav
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wacs.validation.dns.acme", "plugin.validation.dns.acme\wacs.validation.dns.acme.csproj", "{F728DA70-BBF7-4566-918F-2F8188887CF5}"
 EndProject
+Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "wacm.install", "main.install\wacm.install.wixproj", "{BC43B552-F96A-4E0E-8CA4-EE4AB0DC2078}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -326,6 +328,14 @@ Global
 		{F728DA70-BBF7-4566-918F-2F8188887CF5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F728DA70-BBF7-4566-918F-2F8188887CF5}.ReleaseTrimmed|Any CPU.ActiveCfg = Release|Any CPU
 		{F728DA70-BBF7-4566-918F-2F8188887CF5}.ReleaseTrimmed|Any CPU.Build.0 = Release|Any CPU
+		{BC43B552-F96A-4E0E-8CA4-EE4AB0DC2078}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{BC43B552-F96A-4E0E-8CA4-EE4AB0DC2078}.Debug|Any CPU.Build.0 = Debug|x64
+		{BC43B552-F96A-4E0E-8CA4-EE4AB0DC2078}.DebugTrimmed|Any CPU.ActiveCfg = Debug|x64
+		{BC43B552-F96A-4E0E-8CA4-EE4AB0DC2078}.DebugTrimmed|Any CPU.Build.0 = Debug|x64
+		{BC43B552-F96A-4E0E-8CA4-EE4AB0DC2078}.Release|Any CPU.ActiveCfg = Release|x64
+		{BC43B552-F96A-4E0E-8CA4-EE4AB0DC2078}.Release|Any CPU.Build.0 = Release|x64
+		{BC43B552-F96A-4E0E-8CA4-EE4AB0DC2078}.ReleaseTrimmed|Any CPU.ActiveCfg = Release|x64
+		{BC43B552-F96A-4E0E-8CA4-EE4AB0DC2078}.ReleaseTrimmed|Any CPU.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
