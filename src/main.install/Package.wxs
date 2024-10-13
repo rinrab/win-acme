@@ -25,6 +25,9 @@
       <Component Id="public_suffix_list_dat">
         <File Source="$(var.InstallerSource)/public_suffix_list.dat" />
       </Component>
+      <Component Id="Web_Config_xml">
+        <File Source="..\..\dist\Web_Config.xml"></File>
+      </Component>
     </Feature>
   </Package>
 </Wix>
