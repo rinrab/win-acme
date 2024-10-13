@@ -12,5 +12,6 @@
     <DefineConstants>
       InstallerSource=$(InstallerSource);
     </DefineConstants>
+    <OutputName>win-acme</OutputName>
   </PropertyGroup>
 </Project>
