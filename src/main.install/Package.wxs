@@ -29,5 +29,9 @@
         <File Source="..\..\dist\Web_Config.xml"></File>
       </Component>
     </Feature>
+
+    <Feature Id="Scripts">
+      <ComponentGroupRef Id="Scripts" />
+    </Feature>
   </Package>
 </Wix>

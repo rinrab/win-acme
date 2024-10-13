@@ -1,5 +1,6 @@
 ﻿<Project Sdk="WixToolset.Sdk/5.0.2">
   <ItemGroup>
+    <PackageReference Include="WixToolset.Heat" Version="5.0.2" />
     <PackageReference Include="WixToolset.UI.wixext" Version="5.0.2" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
@@ -9,9 +10,18 @@
     <InstallerSource>$(MSBuildProjectDirectory)\..\main\bin\$(Configuration)\net7.0\win-$(Platform)</InstallerSource>
   </PropertyGroup>
   <PropertyGroup>
+    <ScriptsRoot>$(MSBuildProjectDirectory)\..\..\dist\Scripts</ScriptsRoot>
     <DefineConstants>
       InstallerSource=$(InstallerSource);
+      ScriptsRoot=$(ScriptsRoot);
     </DefineConstants>
     <OutputName>win-acme</OutputName>
   </PropertyGroup>
+  <ItemGroup>
+    <HarvestDirectory Include="$(ScriptsRoot)">
+      <ComponentGroupName>Scripts</ComponentGroupName>
+      <DirectoryRefId>INSTALLFOLDER</DirectoryRefId>
+      <PreprocessorVariable>var.ScriptsRoot</PreprocessorVariable>
+    </HarvestDirectory>
+  </ItemGroup>
 </Project>
